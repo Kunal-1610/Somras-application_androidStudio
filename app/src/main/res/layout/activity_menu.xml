@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Menu"
+    android:background="@color/beige">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        >
+
+        <LinearLayout
+            android:layout_width="302dp"
+            android:layout_height="692dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.495"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.577">
+
+
+            <TextView
+                android:id="@+id/welcometxt"
+                android:layout_width="match_parent"
+                android:textColor="@color/main"
+                android:textSize="26sp"
+                android:textAlignment="center"
+                android:textStyle="bold"
+                android:layout_marginBottom="50dp"
+                android:layout_height="wrap_content"
+                android:text="TextView" />
+
+            <Button
+                android:id="@+id/OrderBtn"
+                android:layout_marginBottom="32dp"
+                android:layout_width="257dp"
+                android:layout_height="67dp"
+                android:backgroundTint="@color/main"
+                android:fontFamily="@font/poppins"
+                android:text="Order Now"
+
+                android:textColor="@color/beige"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="77dp"
+                tools:layout_editor_absoluteY="181dp"
+                android:onClick="ordernow"/>
+
+            <Button
+                android:id="@+id/OrderStatBtn"
+                android:layout_width="257dp"
+                android:layout_marginBottom="32dp"
+                android:layout_height="67dp"
+                android:backgroundTint="@color/main"
+                android:fontFamily="@font/poppins"
+                android:text="Order Status"
+                android:textColor="@color/beige"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="77dp"
+                tools:layout_editor_absoluteY="181dp" />
+
+            <Button
+                android:id="@+id/OrderHistorybtn"
+                android:layout_width="257dp"
+                android:layout_height="67dp"
+                android:layout_marginBottom="32dp"
+                android:backgroundTint="@color/main"
+                android:fontFamily="@font/poppins"
+                android:text="Order History"
+                android:onClick="checkHistory"
+                android:textColor="@color/beige"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="77dp"
+                tools:layout_editor_absoluteY="181dp" />
+
+            <Button
+                android:id="@+id/Logout"
+                android:layout_width="257dp"
+                android:layout_height="67dp"
+                android:layout_marginBottom="32dp"
+                android:onClick="logout"
+                android:backgroundTint="@color/main"
+                android:fontFamily="@font/poppins"
+                android:text="Log out"
+                android:textColor="@color/beige"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="77dp"
+                tools:layout_editor_absoluteY="181dp" />
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+  </LinearLayout>
